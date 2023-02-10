@@ -1,0 +1,31 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches" >
+    <mat-toolbar  class="example-toolbar">
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+      <h1 class="example-app-name">Fundoo</h1>
+    </mat-toolbar>
+  
+    <mat-sidenav-container class="example-sidenav-container"
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+        <mat-nav-list>
+          <a mat-list-item routerLink="." >notes</a>
+          <a mat-list-item routerLink="." >reminder</a>
+
+          <a mat-list-item routerLink="." >edit label</a>
+
+          <a mat-list-item routerLink="." >archive</a>
+
+          <a mat-list-item routerLink="/home/trash" >trash</a>
+
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content>
+     
+        <router-outlet></router-outlet>
+        <!-- for  child routes only this routeroutlet  -->
+        <!-- <p *ngFor="let content of fillerContent">{{content}}</p> -->
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

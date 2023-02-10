@@ -1,0 +1,63 @@
+<div style="display: flex;justify-content: center;align-items: center;">
+
+    <form [formGroup]="signUpForm" (ngSubmit)="login()">
+        <div
+        class="main">
+
+            <div
+                style="padding: 20px; display: flex;flex-direction: column;">
+                sngup page
+
+                <div class="purple" >
+                    <mat-form-field appearance="outline" class="orange">
+                        <mat-label>firstname</mat-label>
+                        <input formControlName="firstname" matInput placeholder="firstname">
+                        <mat-error>Enter email</mat-error>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>lastname</mat-label>
+                        <input formControlName="lastname" type="text" matInput placeholder="lastname">
+                        <mat-error>Enter password</mat-error>
+                    </mat-form-field>
+                </div>
+
+
+                <mat-form-field appearance="outline" class="orange">
+                    <mat-label>Email</mat-label>
+                    <input formControlName="email" matInput placeholder="email">
+                    <mat-error>Enter email</mat-error>
+                </mat-form-field>
+
+                <div class="purple" >
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" type="password" matInput placeholder="password">
+                        <mat-error>Enter password</mat-error>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input formControlName="password" type="password" matInput placeholder="password">
+                        <mat-error>Enter password</mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="purple">
+
+                    <span routerLink="/login">login</span>
+
+                    <button mat-raised-button color="primary">Next</button>
+
+                </div>
+
+            </div>
+
+            <div class="imgtag">
+                <img  width="150" height="150" src="/assets/account.svg" alt="">
+            </div>
+        </div>
+
+
+    </form>
+
+</div>

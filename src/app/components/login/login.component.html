@@ -1,0 +1,32 @@
+<div style="display: flex;justify-content: center;align-items: center;">
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <div
+      style="width: 500px;height: fit-content;padding: 20px;display: flex;flex-direction: column;border: 1px solid black;margin-top: 100px;">
+      login intuts
+
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input formControlName="email"  matInput placeholder="email">
+        <mat-error>Enter email</mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input formControlName="password"  type="password" matInput placeholder="password">
+        <mat-error>Enter password</mat-error>
+      </mat-form-field>
+      <div>
+
+        <span routerLink="/signup"> create account insted</span>
+
+        <button mat-raised-button color="primary">Next</button>
+
+      </div>
+
+
+    </div>
+  </form>
+</div>

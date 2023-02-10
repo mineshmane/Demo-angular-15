@@ -1,0 +1,14 @@
+.main-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap ;
+
+}
+
+.card {
+    width: 240px;
+    border: 1px solid grey;
+    margin: 15px;
+    border-radius: 7px;
+    padding: 10px;
+}

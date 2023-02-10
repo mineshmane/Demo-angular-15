@@ -1,0 +1,15 @@
+
+<div style="display: flex;align-items: center;justify-content: center;">
+    <div class="take">
+        <div *ngIf="!show ||show" >
+            <span *ngIf="!show" (click)="showHide()">take a note</span>
+            <input *ngIf="show" [(ngModel)]="title" type="text" placeholder="Title">
+        </div>
+        <div *ngIf="show" style="display: flex;flex-direction: column; justify-content: space-around;">
+    <input type="text" [(ngModel)]="description" placeholder="description">    
+    
+    <button (click)="addNotes()">close</button>
+    
+        </div>
+    </div>
+</div>

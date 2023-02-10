@@ -1,0 +1,15 @@
+<div class="main-con">
+
+    <div class="card" *ngFor="let note of childArrayList">
+        <div (click)="updateNote(note)">
+            {{note.title}} </div>
+        <div (click)="updateNote(note)">
+            {{note.description}}
+        </div>
+        <div>
+            {{note.id}}
+        </div>
+        <app-icons [noteObject]="note"></app-icons>
+    </div>
+
+</div>

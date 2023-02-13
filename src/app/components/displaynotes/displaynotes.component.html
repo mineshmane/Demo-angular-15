@@ -1,6 +1,5 @@
 <div class="main-con">
-
-    <mat-card class="card" *ngFor="let note of childArrayList">
+    <mat-card class="card" *ngFor="let note of childArrayList | searchfilter: searchValue">
         <div (click)="updateNote(note)">
             {{note.title}} </div>
         <div (click)="updateNote(note)">
@@ -11,5 +10,4 @@
         </div>
         <app-icons [noteObject]="note"></app-icons>
     </mat-card>
-
 </div>

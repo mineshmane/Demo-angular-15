@@ -1,12 +1,17 @@
 
-<div style="display: flex;align-items: center;justify-content: center;">
+<div style="display: flex;align-items: center;justify-content: center; margin-top: 20px;">
     <div class="take">
         <div *ngIf="!show ||show" >
             <span *ngIf="!show" (click)="showHide()">take a note</span>
-            <input *ngIf="show" [(ngModel)]="title" type="text" placeholder="Title">
+            <input class="filed" *ngIf="show" [(ngModel)]="title" type="text" placeholder="Title">
+
         </div>
         <div *ngIf="show" style="display: flex;flex-direction: column; justify-content: space-around;">
-    <input type="text" [(ngModel)]="description" placeholder="description">    
+    <!-- <input type="text" >   -->
+
+    <!-- <mat-form-field  class="filed"> -->
+        <input class="filed" [(ngModel)]="description" placeholder="description">
+      <!-- </mat-form-field>   -->
     
     <button (click)="addNotes()">close</button>
     

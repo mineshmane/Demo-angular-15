@@ -7,8 +7,21 @@
 
 .card {
     width: 240px;
-    border: 1px solid grey;
+    border: 1px; 
+    border-color: #e0e0e0;;
     margin: 15px;
     border-radius: 7px;
     padding: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .card {
+        width: 98%;
+        border: 1px; 
+        border-color: #e0e0e0;
+        margin: 15px;
+        border-radius: 7px;
+        padding: 10px;
+    }
+    
 }

@@ -23,6 +23,7 @@ import { IconsComponent } from './components/icons/icons.component';
 import { GetalltrashnotesComponent } from './components/getalltrashnotes/getalltrashnotes.component';
 import { UpdatenoteComponent } from './components/updatenote/updatenote.component'; 
 import { MatDialogModule } from '@angular/material/dialog';
+import { SearchfilterPipe } from './pipes/searchFilter/searchfilter.pipe';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     DisplaynotesComponent,
     IconsComponent,
     GetalltrashnotesComponent,
-    UpdatenoteComponent
+    UpdatenoteComponent,
+    SearchfilterPipe
   ],
   imports: [
     BrowserModule,

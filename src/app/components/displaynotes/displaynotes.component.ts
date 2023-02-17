@@ -19,6 +19,10 @@ export class DisplaynotesComponent implements OnInit {
 
 //array.filter
 
+goBack(){
+  history.back()
+}
+
   ngOnInit(): void {
     this.dataService.recivedData.subscribe((res:any)=>{
       console.log(res);

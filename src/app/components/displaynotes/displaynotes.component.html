@@ -8,6 +8,9 @@
         <div>
             {{note.id}}
         </div>
-        <app-icons [noteObject]="note"></app-icons>
+        <div class="ico" (click)="goBack()">
+            <app-icons [noteObject]="note" ></app-icons>
+
+        </div>
     </mat-card>
 </div>

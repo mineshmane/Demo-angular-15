@@ -23,7 +23,6 @@ export class UserService {
     console.log("payload in user service", requestPayload);
     return this.httpService.PostService('user/login', requestPayload, false, requestHeadersOptions)
 
-
   }
 
   registrationService(requestData: ISignup) {

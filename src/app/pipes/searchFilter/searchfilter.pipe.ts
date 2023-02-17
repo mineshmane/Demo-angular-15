@@ -8,6 +8,8 @@ export class SearchfilterPipe implements PipeTransform {
   transform(value:any,args?: any): any {
     console.log(args);
 
+
+    
     if(!value || !args){
       return value
     }
